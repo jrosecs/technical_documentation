@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical Page">
+    <title>C++ Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+
+    <nav id="navbar">
+      <header id="navheader">C++ Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#C++_Intro">C++ Intro</a></li>
+        <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+        <li><a class="nav-link" href="#Comments">Comments</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Output">Output</a></li>
+        <li><a class="nav-link" href="#User_Input">User Input</a></li>
+      </ul>
+    </nav>
+
+
+<!-- 
+Nav Bar Above
+Main Below
+-->
+
+
+    <main id="main-doc">
+      <section class="main-section" id="C++_Intro">
+        <header id="intro">C++ Intro</header>
+        <p class="indent">C++ is a language used to create high-performance applications.</p>
+        <p class="indent">It gives programmers a high level of control over system resources and memory and was developed by Bjarne Stroustrup.</p>
+        <p class="indent">C++ has been updated in 2011, 2014, 2017, and 2020.</p>
+      </section>
+      <section class="main-section" id="Syntax">
+        <header id="intro">Syntax</header>
+        <p class="indent">Breaking Down Code To Understand The Syntax</p>
+        <p class="indent"><code>1. #include &lt;iostream&gt;</code><br><code>2. using namespace std;</code><br>3.<br>4. <code>int main () {</code><br>5. <code>cout << "Hello World";</code><br>6. <code>return 0;</code><br>7. <code>}</code></p>
+        <p class="indent">Explaining Each Line:</p>
+        <ol class="indent2">
+          <li>This is a Header File Library for input and output. These header files add functionality to C++ programs.</li>
+          <li>Gives the ability to use names for objects and variables from the standard library.</li>
+          <li>Blank Line. C++ ignores the white space but this makes code easier to read.</li>
+          <li>This is a function. Any code inside the curly brackets will be executed.</li>
+          <li>cout (Pronounced "see-out") is an object used to output/print text. This line prints Hello World.</li>
+          <li>This ends the main function.</li>
+          <li>This ending curly bracket officially ends the main function.</li>
+        </ol>
+        <p class="indent"><strong>Do Not Forget The ";"</strong></p>
+        <p class="indent">This ends the statement and an error will occur which means the program will not run.</p>
+      </section>
+      <section class="main-section" id="Comments">
+        <header id="intro">Comments</header>
+        <p class="indent">Comments are used to explain code and to make it easier to read. They can also be used to test alternate code without executing. Comments can be single-line or multi-lined.</p>
+        <p class="indent">Examples:</p>
+        <ul class="indent2">
+          <li>// This is a single-lined comment</li>
+          <li><code>cout << "Hello World";</code> // This is a single-lined comment on the same line as code</li>
+          <li>/* This is multi-lined code<br>this can take up many lines and comment out entire sections of code */</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Variables">
+        <header id="intro">Variables</header>
+        <p class="indent">Variables are containers for soring data values. There are several different types of variables:</p>
+        <ul class="indent2">
+          <li>int - Stores integers (Whole Numbers)</li>
+          <li>double - Stores floating point numbers (Decimals)</li>
+          <li>char - Stores single characters (a)</li>
+          <li>string - Stores text (Hello World)</li>
+          <li>bool - Stores values with two states (True or False)</li>
+        </ul>
+        <p class="indent">Syntax:</p>
+        <code class="indent">type variableName = value;</code>
+        <p class="indent">For Example:</p>
+        <ul class="indent2">
+          <li><code>int myNum = 15;</code></li>
+          <li><code>string myText = "Hello";</code></li>
+        </ul>
+      </section>
+      <section class="main-section" id="Output">
+        <header id="intro">Output</header>
+        <p class="indent">The <code>cout</code> object, with the << operator, is upsed to output values/print them.</p>
+        <p class="indent">Example:</p>
+        <code class="indent code-padding"> cout << "Hello World";</code>
+      </section>
+      <section class="main-section" id="User_Input">
+        <header id="intro" class="lastHeader">User Input</header>
+        <p class="indent">To get user input, we use <code>cin</code>. This predefined variable reads data from the keyboard with the extraction opperator (<code>>></code>).</p>
+        <p class="indent">Example:</p>
+        <code class="indent">int x;</code><br>
+        <code class="indent">cout << "Type a number: ";</code><br>
+        <code class="indent">cin >> x;</code><br>
+        <code class="indent">cout << "Your number is: " << x;</code>
+      </section>
+    </main>
+  </body>
+</html>
